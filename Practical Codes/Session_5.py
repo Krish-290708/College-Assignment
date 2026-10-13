@@ -20,14 +20,14 @@ else:
 
 #Exercise
 #1.
-items = input("What is the item purchased:")
+'''items = input("What is the item purchased:")
 quantity = int(input("What is the quantity of the item purchased:"))
 price = float(input("What is the price of the item:"))
 total = price*quantity
 
 print(f"{'items':<10}{'quantity':>10}{'price':>10}{'total':>10}")
 print("-"*45)
-print(f"{items:<10}{quantity:>10}{price:>10.2f}{total:>10.2f}")
+print(f"{items:<10}{quantity:>10}{price:>10.2f}{total:>10.2f}")'''
 
 #2.
 '''num = int(input("Enter a number:"))
@@ -36,3 +36,18 @@ if num % 3 == 0 and num % 5 == 0:
     print("The number is divisible by both 3 and 5.")
 else:
     print("The number is not divisible by either 3 or 5 or both.")'''
+
+#3.
+total = 0
+
+print(f"{'Subject':<10}{'Marks':>10}{'Percentage':>10}")
+
+for i in range(1,6):
+    marks = int(input(f"Enter marks for subject {i}:"))
+    total = total + marks
+    print(f"{'Subject' + str(i):<10}{marks:>10}{marks:>10}%")
+
+print("-"*45)
+print("Total:",total)
+print("Overall Percentage:",total/5,"%")
+
